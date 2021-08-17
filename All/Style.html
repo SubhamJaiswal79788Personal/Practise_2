@@ -1,0 +1,503 @@
+<!-- 1.DOCTYPE -->
+
+<!-- 
+    Always Include 
+    <!DOCTYPE html> 
+-->
+
+<!--
+    It informs the browser 
+    about the document type.
+-->
+
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+    We should always include the lang attribute inside the <html> tag, 
+    to declare the language of the Web page. This is meant to assist search engines 
+    and browsers. 
+-->
+
+<html lang="en">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+        Meta Data To ensure proper interpretation and correct search engine indexing, 
+        both the language and the character encoding should be defined as early as possible 
+        in an HTML document 
+    -->
+
+    <meta charset="UTF-8">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+        viewport is the user's visible area
+        width=device-width part sets the width of the page to follow the screen-width of the device   
+        initial-scale=1.0 part sets the initial zoom level when the page is first loaded   
+    -->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 2.Never Skip title It is very imp for SEO -->
+    <title>Style</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 3.Lowercase Element Names -->
+    <p>3.Lowercase Element Names</p>
+
+
+    <!-- Bad Practise -->
+
+    <DIV>
+        <P>This is a paragraph.</P>
+    </DIV>
+
+    <!-- Very bad practise -->
+
+    <div>
+        <P>This is a paragraph.</p>
+    </DIV>
+
+
+    <!-- Good practise -->
+
+    <div>
+        <p>This is a paragraph.</p>
+    </div>
+
+    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 4.Always Close Element -->
+    <p>4.Always Close Element</p>
+
+    <!-- Bad: -->
+
+    <div>
+        <p>This is a paragraph.     
+        <p>This is a paragraph.
+    </div>
+
+
+    <!-- Good -->
+
+    <div>
+        <p>This is a paragraph.</p>
+        <p>This is a paragraph.</p>
+    </div>
+
+    <hr>
+
+    <!--
+        4.1.One important reason to add a closing tag is that anything that 
+        follows an opening tag in the HTML code will become nested in that 
+        element. 
+    -->
+    <p>4.1</p>
+
+
+    <!-- FirstExample Good Practise -->
+    <div>Hello</div>
+    <p id="check">Ram</p>
+
+    <!-- SecondExample Bad Practise -->
+    <div> Hello
+    <p id="check1"> Ram
+
+
+    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- 5.Lowercase Attribute Names Quote Attribute Values -->
+
+            <!-- Good Practise -->
+            <a href="www.google.com">Google</a><br>
+
+            <!-- Bad Practise -->
+            <a HREF=www.google.com>Google</a>
+
+            <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- 6.Spaces and Equal Signs -->
+
+        <!-- 
+            HTML allows spaces around equal signs. But space-less is easier 
+            to read and groups entities better together. 
+        -->
+
+            <!-- Good: -->
+            <link rel="stylesheet" href="styles.css">
+
+            <!-- Bad: -->
+            <link rel = "stylesheet" href = "styles.css" >
+
+
+
+
+
+
+
+
+
+
+            <!-- 7.Specify alt, width, and height for Images -->
+
+            <!-- Good Practise -->
+            <img src="html5.gif" alt="HTML5" style="width:128px;height:128px"><br>
+
+            <!-- Bad Practise -->
+            <img src="html5.gif">
+
+        <!-- 
+            Mentioning width and Height , This reduces flickering, because the 
+            browser can reserve space for the image before loading. 
+        -->
+
+            <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+        8.Use Separate file for css and Javascript 
+        <script src=style.js></script>
+        <link rel="stylesheet" href="styles.css"> 
+    -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+        we should not add blank lines.
+        For readability, add blank lines to separate or logical code blocks.
+       
+    -->
+
+        <p>9. Indetation and blank spaces </p>
+
+        <!-- Good: -->
+        <div>
+
+            <h1>Famous Cities</h1>
+
+            <h2>Tokyo</h2>
+            <p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+                and the most populous metropolitan area in the world.
+                It is the seat of the Japanese government and the Imperial Palace,
+                and the home of the Japanese Imperial Family.</p>
+
+        </div>
+
+        <hr>
+
+        <!-- Bad: -->
+        <div>
+
+            <h1>Famous Cities</h1>
+
+            <h2>Tokyo</h2>
+
+            <p>
+                Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+                and the most populous metropolitan area in the world.
+                It is the seat of the Japanese government and the Imperial Palace,
+                and the home of the Japanese Imperial Family.
+            </p>
+
+        </div>
+
+
+
+        <hr>
+
+
+
+        <!-- Comments -->
+        <p>10.Comments</p>
+
+        <!-- One line comments - This is style guide -->
+
+
+        <!-- 
+            Multiline comments - Style guide help us write Consistent, clean code make it easier to read and understand. A
+            consistent, clean, and tidy HTML code makes it easier for others to read and understand your code. 
+        -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src=style.js></script>
+</body>
+
+</html>
